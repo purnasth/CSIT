@@ -1,0 +1,48 @@
+body
+{
+    font-size: 18px; 
+}
+.container
+{
+  margin-top: 30px;
+  background-color: none;
+}
+.container h5
+{
+    color: black;
+}
+.container h5:hover
+{
+    color: rgb(4, 156, 156);
+}
+.container h7, li
+{
+    color: black;
+}
+.container h7, li:hover
+{
+    color: rgb(4, 156, 156);
+}
+
+/* .container .accordion .card button h5
+{
+    
+} */
+button, a
+{
+    text-decoration: none!important;
+}
+h7
+{
+    color: #333!important;
+}
+h7:hover
+{
+    color: rgb(4, 156, 156)!important;
+    font-weight: 500;
+    transition: 0.5s;
+}
+h6
+{
+    font-size: 20px;
+}

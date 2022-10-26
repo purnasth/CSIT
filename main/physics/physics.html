@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Starts linking for icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+    <!--Ends linking for icon-->
+    <link rel="stylesheet" href="DL.css">
+    <!-- For favicons -->
+    <link rel="icon" href="../favicon.ico">
+    <!-- Link -->
+    <link rel="stylesheet" href="../C/notes/cnote.css">
+    <style>
+        body{
+            text-align: center!important;
+        }
+        details
+        {
+            color: green;
+        }
+        button a
+        {
+            font-size: larger;
+            text-transform: uppercase;
+            color: aliceblue;
+            transition: 0.5s;
+        }
+        button a:hover
+        {
+            color: #000;
+        }
+    </style>
+</head>  
+<body>
+  <!--Starts Nav Bar-->
+  <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background: black;">
+    <!--<nav class="navbar navbar-expand-sm sticky-top navbar-light" style="background-color: #bdfcc4;">-->
+      <div class="btn-group">
+            <button class="btn btn-success" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Login
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <a class="dropdown-item" href="#"><i class="bi bi-facebook"></i> Facebook</a>
+                <a class="dropdown-item" href="#"><i class="bi bi-google"></i> Google</a>
+                <a class="dropdown-item" href="#"><i class="bi bi-github"></i> GitHub</a>
+            </div>
+            <button class="btn btn-outline-primary"><i class="bi bi-facebook"></i></button>
+            <button class="btn btn-outline-primary"><i class="bi bi-google"></i></button>
+            <button class="btn btn-outline-primary"><i class="bi bi-github"></i></button>
+        </div>
+      <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                  <a class="nav-link text-light font-weight-bold px-3" href="#">HOME<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link text-light font-weight-bold px-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Physics
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="" target="_blank"><i class="bi bi-1-circle"></i> Exam questions</a>
+                    <a class="dropdown-item" href="#"><i class="bi bi-2-circle-fill"></i> Notes</a>
+                    <a class="dropdown-item" href="#"><i class="bi bi-3-circle-fill"></i> Revision</a>
+                  </div>
+                </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link text-light font-weight-bold px-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="bi bi-skip-backward"></i> Back
+                    </a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="bi bi-search"></i></button>
+              </form>
+            </div>
+        </nav>
+    </div>
+  </div>
+  </nav>
+  <!--Nav Bar Ends-->
+</head>
+<body>
+  <div class="container py-5">
+    <div class="accordion" id="accordionExample">
+        <!-- Chapter 1 -->
+        <a href="../physics/notes/Rotational Dynamics and Oscillatory Motion Chapter 1.docx.pdf" target="_blank">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h5>Chapter: 1 <strong> Rotational Dynamics and Oscillatory Motion</strong></h5>
+              </button>
+              <button class="btn btn-success"  type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> 5 questions</button>
+            </h2>
+          </div>     
+        </a>
+        <button class="btn btn-danger"><a href="../physics/notes/Chapter 1.pdf" target="_blank">Numericals</a></button>
+
+        <!-- Chapter 2 -->
+        <a href="../physics/notes/Electric and Magnetic Fields chapter 2.pdf" target="_blank">
+            <div class="card py-3">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <h5>Chapter: 2 <strong>Electric and Magnetic field</strong></h5>
+                    </button>
+                  <button class="btn btn-success"  type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> 3 questions</button>
+                  </h2>
+                </div>
+        </a>
+        <button class="btn btn-danger"><a href="../physics/notes/Chapter 2.pdf" target="_blank">Numericals</a></button>
+
+        <!--Chapter 3-->
+        <a href="../physics/notes/Chapter3.pdf" target="_blank">
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <h5>Chapter: 3 <strong> Fundamentals of Atomic Theory</strong></h5>
+                    </button>
+                    <button class="btn btn-success"  type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> 7 questions</button>
+                  </h2>
+                </div>
+        </a>
+        <button class="btn btn-danger"><a href="../physics/notes/Chapter 3.pdf" target="_blank">Numericals</a></button>
+          
+        <!-- Chapter 4 -->
+        <div class="card py-3">
+            <a href="../physics/notes/Chapter4.pdf" target="_blank">
+            <div class="card-header" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  <h5>Chapter: 4 <strong> Methods of Quantam Mechanics</strong></h5>
+                </button>
+                <button class="btn btn-success"  type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> 8 questions</button>
+              </h2>
+            </div>
+            </a>
+            <button class="btn btn-danger"><a href="../physics/notes/Chapter 4.pdf" target="_blank">Numericals</a></button>
+            
+          <!-- Chapter 5 -->
+          <div class="card">
+            <a href="../DL/DL notes/chap-5 Combinational Logic with MSI and LSI.pdf" target="_blank">
+            <div class="card-header" id="headingFive">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  <h5>Chapter: 5 <strong> Fundamentals of Solid State Physics</strong></h5>
+                </button>
+              <button class="btn btn-success"  type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"> 12 questions</button>
+              </h2>
+            </div>
+            </a>
+            <button class="btn btn-danger"><a href="../physics/notes/Chap 5,6,7.pdf" target="_blank">Numericals of chapter 5 6 and 7</a></button>
+          <!--Chapter 6-->
+          <div class="card py-3">
+            <a href="../physics/notes/Unit6.pdf" target="_blank">
+            <div class="card-header" id="headingSix">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  <h5>Chapter: 6 <strong> Semiconductor and Semiconductor Devices</strong></h5>
+                </button>
+                <button class="btn btn-success"  type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"> 7 questions</button>
+              </h2>
+            </div>
+        </a>
+
+          <!-- Chapter 7 -->
+        <div class="card">
+            <a href="../physics/notes/Universal Gates _ Physics of IC chapter 7 final note.pdf" target="_blank">
+                <div class="card-header" id="headingSeven">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        <h5>Chapter: 7 <strong> Universal Gates and Physics of Integrated Circuit</strong></h5>
+                      </button>
+                      <button class="btn btn-success"  type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"> 8 questions</button>
+                    </h2>
+            </a>
+          <!--End of DL-->
+      </div>
+    </div>
+</body>
