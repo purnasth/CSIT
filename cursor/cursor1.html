@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - Creating Custom Cursors</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background: #1b1b1b;
+      }
+
+      .cursor {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #ae882f;
+        border-radius: 50%;
+        position: absolute;
+        transition-duration: 200ms;
+        transition-timing-function: ease-out;
+        animation: cursorAnim 0.5s infinite alternate;
+        pointer-events: none;
+      }
+
+      .cursor::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        border: 8px solid gray;
+        border-radius: 50%;
+        opacity: 0.5;
+        top: -8px;
+        left: -8px;
+        animation: cursorAnim2 0.5s infinite alternate;
+      }
+
+      @keyframes cursorAnim {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(0.7);
+        }
+      }
+      @keyframes cursorAnim2 {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(0.4);
+        }
+      }
+      @keyframes cursorAnim3 {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(3);
+        }
+        100% {
+          transform: scale(1);
+          opacity: 0;
+        }
+      }
+      .expand {
+        animation: cursorAnim3 0.5s forwards;
+        border: 1px solid #ae882f;
+      }
+
+      p {
+        color: white;
+        font-family: "arial";
+        text-align: center;
+        margin-top: 50px;
+        font-size: 1.4em;
+      }
+      p a {
+        color: teal;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link rel="stylesheet" href="css/main.css" />
+      </head>
+      <body>
+        <p>
+          This is from the
+          <a href="https://youtu.be/rfpRZ2t_BrQ">custom cursor tutorial</a> on
+          the DesignCourse YouTube Channel
+        </p>
+        <div class="cursor"></div>
+        <!-- partial -->
+        <script>
+          const cursor = document.querySelector(".cursor");
+
+          document.addEventListener("mousemove", (e) => {
+            cursor.setAttribute(
+              "style",
+              "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
+            );
+          });
+
+          document.addEventListener("click", () => {
+            cursor.classList.add("expand");
+
+            setTimeout(() => {
+              cursor.classList.remove("expand");
+            }, 500);
+          });
+        </script>
+      </body>
+    </html>
+  </body>
+</html>

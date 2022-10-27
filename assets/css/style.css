@@ -87,7 +87,7 @@ a:focus {
 }
 .navbar {
   padding: 15px 10px;
-  background: transparent!important;
+  background: transparent !important;
   border: none;
   border-radius: 0;
   /* margin-bottom: 40px; */
@@ -339,6 +339,8 @@ hr {
   padding: 0;
   width: 100%;
   margin-top: -21vh;
+  user-select: none;
+  /* pointer-events: none; */
 }
 .scene {
   position: relative;
@@ -408,6 +410,7 @@ hr {
   width: 10px;
   height: 200px;
   background: linear-gradient(#f4b625, transparent);
+
   /* background: radial-gradient(
       ellipse farthest-corner at right bottom,
       #fedb37 0%,

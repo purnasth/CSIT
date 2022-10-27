@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Snippet - BBBootstrap</title>
+
+    <style>
+      .cursor {
+        position: relative;
+        transition: all 150ms ease-out;
+        width: 0;
+      }
+      .inner-cursor {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        background: radial-gradient(
+            ellipse farthest-corner at right bottom,
+            #fedb37 0%,
+            #fdb931 8%,
+            #9f7928 30%,
+            #8a6e2f 40%,
+            transparent 80%
+          ),
+          radial-gradient(
+            ellipse farthest-corner at left top,
+            #ffffff 0%,
+            #ffffac 8%,
+            #d1b464 25%,
+            #5d4a1f 62.5%,
+            #5d4a1f 100%
+          );
+        /* box-shadow: 0 0 0 9px #000, 0 0 0 10px #ae882f; */
+        z-index: 99999;
+      }
+      .outer-cursor {
+        /* position: absolute; */
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        border: solid 2px #ae882f;
+        transform: translate(-9px, -9px);
+      }
+    </style>
+  </head>
+  <div class="cursor" id="cursor">
+    <div class="inner-cursor"></div>
+    <div class="outer-cursor"></div>
+  </div>
+  <script type="text/javascript">
+    var cursor = document.getElementById("cursor");
+    window.addEventListener("mousemove", function (event) {
+      cursor.style.left = event.clientX + "px";
+      cursor.style.top = event.clientY + "px";
+    });
+  </script>
+  <script type="text/javascript">
+    var myLink = document.querySelector('a[href="#"]');
+    myLink.addEventListener("click", function (e) {
+      e.preventDefault();
+    });
+  </script>
+</html>
