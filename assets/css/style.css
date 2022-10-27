@@ -16,22 +16,23 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-
-  height: 300vh;
   background-color: #000;
 }
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 0.5rem;
+  height: 0.5rem;
 }
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  /* background: #f1f1f1; */
   background-color: #000;
+  border-radius: 100vw;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   /* background: #888; */
+  border-radius: 100vw;
   background: radial-gradient(
       ellipse farthest-corner at right bottom,
       #fedb37 0%,
@@ -75,7 +76,7 @@ p {
   font-size: 1.1em;
   font-weight: 300;
   line-height: 1.7em;
-  color: #999;
+  color: #ae882f;
 }
 a,
 a:hover,
@@ -86,12 +87,13 @@ a:focus {
 }
 .navbar {
   padding: 15px 10px;
-  background: transparent !important;
+  background: transparent!important;
   border: none;
   border-radius: 0;
-  margin-bottom: 40px;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  /* margin-bottom: 40px; */
+  /* box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); */
   z-index: 9999;
+  width: 99vw;
 }
 .navbar-btn {
   box-shadow: none;
@@ -101,7 +103,7 @@ a:focus {
 .line {
   width: 100%;
   height: 1px;
-  border-bottom: 1px dashed #ddd;
+  border-bottom: 1px dashed #f0e68c;
 }
 .wrapper {
   display: flex;
@@ -139,7 +141,7 @@ a:focus {
 }
 #sidebar ul.components {
   padding: 20px 0px;
-  border-bottom: 1px solid #f0e68c;
+  border-bottom: 1px dashed #f0e68c;
 }
 #sidebar ul p {
   padding: 10px;
@@ -216,15 +218,16 @@ ul.CTAs a {
   border-radius: 5px;
   margin-bottom: 5px;
 }
+li.portfolio {
+  font-size: 1.5rem;
+}
 a.download {
   font-weight: 800;
   outline: solid 1px #9f7928;
   outline-offset: 2px;
   font-family: title;
   letter-spacing: 4px;
-}
-a.download,
-a.download:hover {
+  border-radius: 30px !important;
   background: radial-gradient(
       ellipse farthest-corner at right bottom,
       #fedb37 0%,
@@ -241,7 +244,12 @@ a.download:hover {
       #5d4a1f 62.5%,
       #5d4a1f 100%
     );
+  font-size: 2rem !important;
   color: #000;
+}
+a.download:hover {
+  color: #da9100 !important;
+  text-shadow: #333 -2px 0, #888 2px 0;
 }
 #content {
   width: 100%;
@@ -251,6 +259,7 @@ a.download:hover {
 }
 .content-wrapper {
   padding: 15px;
+  margin-top: -30px;
 }
 @media (maz-width: 768px) {
   #sidebar {
@@ -279,6 +288,27 @@ a.download:hover {
   font-family: title;
   letter-spacing: 4px;
   font-size: 2rem;
+  color: #000;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+  line-height: 1.5rem;
+  text-shadow: 0 0 10px #fedb37, 0 0 20px #fdb931, 0 0 40px #9f7928,
+    0 0 80px #8a6e2f, 0 0 160px #5d4a1f;
+  transition: 0.25s ease-in-out;
+}
+#sidebar .sidebar-header h3:hover {
+  color: #fff;
+}
+
+/* .navbar-toggler-icon
+{
+  outline:solid 1px #ae882f;
+} */
+
+hr {
+  /* background-color: #f0e68c!important; */
+  /* width: 100%;
+  left: 0; */
+  border-bottom: 1px dashed #f0e68c;
 }
 
 .namaste {
@@ -287,12 +317,19 @@ a.download:hover {
   letter-spacing: 4px;
   font-size: 2rem;
   transition: 0.5s;
-  color: #ae882f;
+  /* color: #ae882f; */
+  color: #000;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+  line-height: 1.5rem;
+  text-shadow: 0 0 10px #fedb37, 0 0 20px #fdb931, 0 0 40px #9f7928,
+    0 0 80px #8a6e2f, 0 0 160px #5d4a1f;
 }
 
 .namaste:hover {
-  color: #fcb613;
+  /* color: #fcb613; */
+  color: #fff;
 }
+
 /* 
 ################## ROCKET STARTS  #############################
  */
