@@ -518,13 +518,13 @@ hr {
 }
 
 h3.purna {
-  /* color: #fcb613; */
   font-family: purna;
   margin-top: 20px;
   margin-bottom: 30px;
   text-align: center;
   font-size: 2rem;
   transition: all 0.25s ease-in;
+  color: #ae882f;
 }
 h3.purna:hover {
   color: #fcb613;
@@ -533,6 +533,8 @@ h3.purna:hover {
   color: #ae882f;
   text-align: center;
   margin-top: -1.5rem;
+  /* text-decoration: underline; */
+  word-spacing: 0.5rem;
 }
 
 .btn-gold {
