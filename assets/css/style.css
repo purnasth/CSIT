@@ -440,6 +440,7 @@ hr {
     transform: translateY(200vh);
   }
 }
+
 .scene .rocket {
   position: absolute;
   pointer-events: none;
@@ -460,10 +461,11 @@ hr {
   position: absolute;
   bottom: -200px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -10px);
   width: 10px;
   height: 200px;
   background: linear-gradient(#f4b625, transparent);
+  z-index: -1;
 
   /* background: radial-gradient(
       ellipse farthest-corner at right bottom,
@@ -495,26 +497,22 @@ hr {
 }
 .scene:active .rocket::before,
 .scene:active .rocket::after {
-  /* background: linear-gradient(#0dff00, transparent); */
-  background: radial-gradient(
-      ellipse farthest-corner at right bottom,
-      #fedb37 0%,
-      #fdb931 8%,
-      #9f7928 30%,
-      #8a6e2f 40%,
-      transparent 80%
-    ),
-    radial-gradient(
-      ellipse farthest-corner at left top,
-      #ffffff 0%,
-      #ffffac 8%,
-      #d1b464 25%,
-      #5d4a1f 62.5%,
-      #5d4a1f 100%
-    );
-  bottom: -300px;
-  height: 300px;
-  filter: blur(1px);
+  background: #fff;
+  height: 200px;
+  filter: drop-shadow(0 5px 10px #f4b625);
+}
+
+.scene .rocket svg {
+  stroke: #ae882f;
+  /* stroke: #fff; */
+  height: 10rem;
+  width: 10rem;
+  fill: #000;
+  filter: drop-shadow(0 5px 10px #f4b625);
+}
+
+.scene:active .rocket svg {
+  fill: #fff;
 }
 
 h3.purna {
