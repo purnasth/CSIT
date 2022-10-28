@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Snippet - BBBootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
+    <style>
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      } /* Importing fonts from Google */
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+      /* Reseting */
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: linear-gradient(to bottom right, #1f72ee 20%, #fc08db 80%);
+        /* background: linear-gradient(135deg, #fc00ff, #00dbde);
+    background: linear-gradient(135deg, #4568DC, #B06AB3); */
+        /* background: linear-gradient(to top right, #1cd7f8, #ff93f1 100%, #1f72ee 5%); */
+        min-height: 90vh;
+      }
+
+      .container {
+        margin-top: 70px;
+        position: relative;
+        z-index: 100;
+      }
+
+      .container .row .card {
+        min-width: 250px;
+        max-width: 270px;
+        height: 320px;
+        margin: 30px;
+        background: rgba(255, 255, 255, 0.1);
+        overflow: hidden;
+        backdrop-filter: blur(5px);
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 15px;
+        cursor: pointer;
+        position: relative;
+      }
+
+      input[type="checkbox"] {
+        position: absolute;
+        width: 20px;
+        opacity: 0;
+        z-index: 200;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+      }
+
+      .fas.fa-heart {
+        position: absolute;
+        cursor: pointer;
+        right: 10px;
+        top: 10px;
+        font-size: 1.3rem;
+        color: #ffffff80;
+      }
+
+      .container .row .card .card-body {
+        padding: 1rem 1.2rem;
+        color: #fff;
+      }
+
+      @keyframes heart {
+        0% {
+          transform: scale(0.5);
+        }
+
+        20% {
+          transform: scale(1);
+        }
+
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      input[type="checkbox"]:checked + .fas.fa-heart {
+        will-change: font-size;
+        color: #e2264d;
+        animation: heart 1s cubic-bezier(0.17, 0.89, 0.32, 1.49);
+      }
+
+      .container .row .card .card-body .card-img img {
+        width: 80px;
+        height: 100px;
+        object-fit: contain;
+      }
+
+      .container .row .card .card-body .name.h5 {
+        margin: 0;
+      }
+
+      .container .row .card .card-body .price {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #6ef5bf;
+      }
+
+      .container .row .card .card-body .btn.btn-primary {
+        background: linear-gradient(145deg, #0685ac, #36aa7c 50%, #0685ac);
+        border: none;
+        font-size: 600;
+      }
+
+      .container .row .card .card-body .btn.btn-primary:hover {
+        background: linear-gradient(110deg, #0685ac, #05ff9b 50%, #0685ac);
+      }
+    </style>
+  </head>
+  <body className="snippet-body">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 d-flex justify-content-center">
+          <div class="card">
+            <input class="toggle-heart" type="checkbox" />
+            <span class="fas fa-heart"></span>
+            <div class="card-body text-center">
+              <div class="card-img py-2">
+                <img
+                  src="https://www.freepnglogos.com/uploads/sprite-png-logo/box-sprite-bottle-png-images-logo-5.png"
+                  alt=""
+                />
+              </div>
+              <div class="name h5">Random Soda</div>
+              <div class="price">$5.00</div>
+              <div class="description">
+                Refreshing minty taste soda with a hint of ginger
+              </div>
+              <div class="btn btn-primary my-2 mt-3">Add to card</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 d-flex justify-content-center">
+          <div class="card">
+            <input class="toggle-heart" type="checkbox" />
+            <span class="fas fa-heart"></span>
+            <div class="card-body text-center">
+              <div class="card-img py-2">
+                <img
+                  src="https://www.freepnglogos.com/uploads/sprite-png-logo/box-sprite-bottle-png-images-logo-5.png"
+                  alt=""
+                />
+              </div>
+              <div class="name h5">Random Soda</div>
+              <div class="price">$5.00</div>
+              <div class="description">
+                Refreshing minty taste soda with a hint of ginger
+              </div>
+              <div class="btn btn-primary my-2 mt-3">Add to card</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 d-flex justify-content-center">
+            <div class="card">
+              <input class="toggle-heart" type="checkbox" />
+              <span class="fas fa-heart"></span>
+              <div class="card-body text-center">
+                <div class="card-img py-2">
+                  <img
+                    src="https://www.freepnglogos.com/uploads/sprite-png-logo/box-sprite-bottle-png-images-logo-5.png"
+                    alt=""
+                  />
+                </div>
+                <div class="name h5">Random Soda</div>
+                <div class="price">$5.00</div>
+                <div class="description">
+                  Refreshing minty taste soda with a hint of ginger
+                </div>
+                <div class="btn btn-primary my-2 mt-3">Add to card</div>
+              </div>
+            </div>
+          </div>
+        <div class="col-lg-3 d-flex justify-content-center">
+          <div class="card">
+            <input class="toggle-heart" type="checkbox" />
+            <span class="fas fa-heart"></span>
+            <div class="card-body text-center">
+              <div class="card-img py-2">
+                <img
+                  src="https://www.freepnglogos.com/uploads/sprite-png-logo/box-sprite-bottle-png-images-logo-5.png"
+                  alt=""
+                />
+              </div>
+              <div class="name h5">Random Soda</div>
+              <div class="price">$5.00</div>
+              <div class="description">
+                Refreshing minty taste soda with a hint of ginger
+              </div>
+              <div class="btn btn-primary my-2 mt-3">Add to card</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 d-flex justify-content-center">
+          <div class="card">
+            <input class="toggle-heart" type="checkbox" />
+            <span class="fas fa-heart"></span>
+            <div class="card-body text-center">
+              <div class="card-img py-2">
+                <img
+                  src="https://www.freepnglogos.com/uploads/sprite-png-logo/box-sprite-bottle-png-images-logo-5.png"
+                  alt=""
+                />
+              </div>
+              <div class="name h5">Random Soda</div>
+              <div class="price">$5.00</div>
+              <div class="description">
+                Refreshing minty taste soda with a hint of ginger
+              </div>
+              <div class="btn btn-primary my-2 mt-3">Add to card</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 d-flex justify-content-center">
+          <div class="card">
+            <input class="toggle-heart" type="checkbox" />
+            <span class="fas fa-heart"></span>
+            <div class="card-body text-center">
+              <div class="card-img py-2">
+                <img
+                  src="https://www.freepnglogos.com/uploads/sprite-png-logo/box-sprite-bottle-png-images-logo-5.png"
+                  alt=""
+                />
+              </div>
+              <div class="name h5">Random Soda</div>
+              <div class="price">$5.00</div>
+              <div class="description">
+                Refreshing minty taste soda with a hint of ginger
+              </div>
+              <div class="btn btn-primary my-2 mt-3">Add to card</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 d-flex justify-content-center">
+          <div class="card">
+            <input class="toggle-heart" type="checkbox" />
+            <span class="fas fa-heart"></span>
+            <div class="card-body text-center">
+              <div class="card-img py-2">
+                <img
+                  src="https://www.freepnglogos.com/uploads/sprite-png-logo/box-sprite-bottle-png-images-logo-5.png"
+                  alt=""
+                />
+              </div>
+              <div class="name h5">Random Soda</div>
+              <div class="price">$5.00</div>
+              <div class="description">
+                Refreshing minty taste soda with a hint of ginger
+              </div>
+              <div class="btn btn-primary my-2 mt-3">Add to card</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 d-flex justify-content-center">
+          <div class="card">
+            <input class="toggle-heart" type="checkbox" />
+            <span class="fas fa-heart"></span>
+            <div class="card-body text-center">
+              <div class="card-img py-2">
+                <img
+                  src="https://www.freepnglogos.com/uploads/sprite-png-logo/box-sprite-bottle-png-images-logo-5.png"
+                  alt=""
+                />
+              </div>
+              <div class="name h5">Random Soda</div>
+              <div class="price">$5.00</div>
+              <div class="description">
+                Refreshing minty taste soda with a hint of ginger
+              </div>
+              <div class="btn btn-primary my-2 mt-3">Add to card</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script type="text/javascript">
+      var myLink = document.querySelector('a[href="#"]');
+      myLink.addEventListener("click", function (e) {
+        e.preventDefault();
+      });
+    </script>
+  </body>
+</html>
