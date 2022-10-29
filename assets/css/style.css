@@ -22,16 +22,12 @@ body {
   width: 0.5rem;
   height: 0.5rem;
 }
-/* Track */
 ::-webkit-scrollbar-track {
-  /* background: #f1f1f1; */
   background-color: #000;
   border-radius: 100vw;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
-  /* background: #888; */
   border-radius: 100vw;
   background: radial-gradient(
       ellipse farthest-corner at right bottom,
@@ -52,9 +48,7 @@ body {
   transition: all 0.5s ease;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  /* background: #555; */
   background: radial-gradient(
       ellipse farthest-corner at right bottom,
       #fedb37 0%,
@@ -153,9 +147,11 @@ a:focus {
   padding: 10px;
   font-size: 1.1em;
   display: block;
+  font-weight: 500;
 }
 #sidebar ul li a:hover {
   color: #fff;
+  /* color: #000; */
   background: radial-gradient(
       ellipse farthest-corner at right bottom,
       #fedb37 0%,
@@ -219,92 +215,6 @@ ul.CTAs a {
   margin-bottom: 5px;
 }
 
-.portfolio-button button {
-  font-family: title;
-  font-size: 1.45rem;
-  padding: 0.4em 1em;
-  position: relative;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  transition: 0.2s;
-  color: #000;
-  font-weight: 700;
-  border-radius: 50px;
-  background: radial-gradient(
-      ellipse farthest-corner at right bottom,
-      #fedb37 0%,
-      #fdb931 8%,
-      #9f7928 30%,
-      #8a6e2f 40%,
-      transparent 80%
-    ),
-    radial-gradient(
-      ellipse farthest-corner at left top,
-      #ffffff 0%,
-      #ffffac 8%,
-      #d1b464 25%,
-      #5d4a1f 62.5%,
-      #5d4a1f 100%
-    );
-  outline: solid 1.5px #9f7928;
-  outline-offset: 1px;
-}
-.portfolio-button button:hover {
-  transition: 0.5s ease-in-out;
-  /* transform: translateX(5px); */
-}
-.portfolio-button a {
-  text-decoration: none;
-}
-.portfolio-button button span {
-  display: block;
-  transition: all 0.3s ease-in-out;
-  margin-left: -10px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-.portfolio-button button svg {
-  display: block;
-  transform-origin: center center;
-  transition: transform 0.3s ease-in-out;
-  opacity: 0;
-}
-.portfolio-button button:hover .wrapper {
-  animation: fly 0.6s ease-in-out infinite alternate;
-}
-.portfolio-button button:hover svg {
-  transform: translateX(3.15em) rotate(1080deg) scale(2);
-  opacity: 1;
-}
-.portfolio-button button:hover span {
-  transform: translateX(10em);
-}
-.portfolio-button button:active {
-  transform: scale(0.95);
-}
-.portfolio-button button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, #fff, transparent);
-  transition: 0.8s;
-}
-.portfolio-button button:hover::before {
-  left: 100%;
-}
-@keyframes fly {
-  from {
-    transform: translateY(0.1em);
-  }
-  to {
-    transform: translateY(-0.1em);
-  }
-}
-
 #content {
   width: 100%;
   padding: 20px;
@@ -353,6 +263,30 @@ ul.CTAs a {
   color: #fff;
 }
 
+.btn-gold {
+  background: radial-gradient(
+      ellipse farthest-corner at right bottom,
+      #fedb37 0%,
+      #fdb931 8%,
+      #9f7928 30%,
+      #8a6e2f 40%,
+      transparent 80%
+    ),
+    radial-gradient(
+      ellipse farthest-corner at left top,
+      #ffffff 0%,
+      #ffffac 8%,
+      #d1b464 25%,
+      #5d4a1f 62.5%,
+      #5d4a1f 100%
+    );
+}
+.btn-gold:active:hover {
+  background: #fff;
+  box-shadow: 0 0 10px #fedb37, 0 0 20px #fdb931, 0 0 40px #9f7928,
+    0 0 80px #8a6e2f, 0 0 160px #5d4a1f;
+}
+
 /* .navbar-toggler-icon
 {
   outline:solid 1px #ae882f;
@@ -384,6 +318,145 @@ hr {
   color: #fff;
 }
 
+.version {
+  color: #ae882f;
+  text-align: center;
+  margin-top: 4rem;
+  /* text-decoration: underline; */
+  word-spacing: 0.5rem;
+}
+
+
+
+
+
+.handwriting {
+  width: 16rem;
+  height: 5rem;
+  transition: all 4s ease;
+  transition-delay: 3s;
+  /* pointer-events: none; */
+  background-color: transparent !important;
+}
+.handwriting .purna-svg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translate(-10%);
+}
+.handwriting .purna-svg .text {
+  stroke: #ae882f;
+  stroke-dasharray: 9000;
+  stroke-dashoffset: 9000;
+  -webkit-animation: animate 5s linear 1 forwards;
+  animation: animate-text 5s linear 1 forwards;
+}
+.handwriting .purna-svg .text:hover {
+  stroke: #fcb613;
+}
+@-webkit-keyframes animate-text {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes animate-text {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* PORTFOLIO BUTTON*/
+.portfolio-button button {
+  font-family: title;
+  font-size: 1.45rem;
+  padding: 0.4em 1em;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.2s;
+  color: #000;
+  font-weight: 700;
+  border-radius: 50px;
+  background: radial-gradient(
+      ellipse farthest-corner at right bottom,
+      #fedb37 0%,
+      #fdb931 8%,
+      #9f7928 30%,
+      #8a6e2f 40%,
+      transparent 80%
+    ),
+    radial-gradient(
+      ellipse farthest-corner at left top,
+      #ffffff 0%,
+      #ffffac 8%,
+      #d1b464 25%,
+      #5d4a1f 62.5%,
+      #5d4a1f 100%
+    );
+  outline: solid 1.5px #9f7928;
+  outline-offset: 1px;
+}
+.portfolio-button button:hover {
+  transition: 0.5s ease-in-out;
+  /* transform: translateX(5px); */
+}
+.portfolio-button a {
+  text-decoration: none;
+}
+.portfolio-button button span {
+  display: block;
+  transition: all 0.3s ease-in-out;
+  margin-left: -15px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+}
+.portfolio-button button .portfolio-svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+  opacity: 0;
+}
+.portfolio-button button:hover .wrapper {
+  animation: fly 0.6s ease-in-out infinite alternate;
+}
+.portfolio-button button:hover .portfolio-svg {
+  transform: translateX(2.9em) rotate(1080deg) scale(2);
+  opacity: 1;
+}
+.portfolio-button button:hover span {
+  transform: translateX(10em);
+}
+.portfolio-button button:active {
+  transform: scale(0.95);
+}
+.portfolio-button button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #fff, transparent);
+  transition: 0.8s;
+}
+.portfolio-button button:hover::before {
+  left: 100%;
+}
+@keyframes fly {
+  from {
+    transform: translateY(0.1em);
+  }
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+
+
+
+
 /* 
 ################## ROCKET STARTS  #############################
  */
@@ -395,6 +468,7 @@ hr {
   margin-top: -21vh;
   user-select: none;
   /* pointer-events: none; */
+  /* cursor: none; */
 }
 .scene {
   position: relative;
@@ -428,7 +502,6 @@ hr {
       #5d4a1f 62.5%,
       #5d4a1f 100%
     );
-
   animation: animateStars linear infinite;
 }
 @keyframes animateStars {
@@ -465,24 +538,6 @@ hr {
   width: 10px;
   height: 200px;
   background: linear-gradient(#f4b625, transparent);
-  z-index: -1;
-
-  /* background: radial-gradient(
-      ellipse farthest-corner at right bottom,
-      #fedb37 0%,
-      #fdb931 8%,
-      #9f7928 30%,
-      #8a6e2f 40%,
-      transparent 80%
-    ),
-    radial-gradient(
-      ellipse farthest-corner at left top,
-      #ffffff 0%,
-      #ffffac 8%,
-      #d1b464 25%,
-      #5d4a1f 62.5%,
-      #5d4a1f 100%
-    ); */
 }
 .scene .rocket::after {
   content: "";
@@ -502,7 +557,7 @@ hr {
   filter: drop-shadow(0 5px 10px #f4b625);
 }
 
-.scene .rocket svg {
+.scene .rocket .rocket-svg {
   stroke: #ae882f;
   /* stroke: #fff; */
   height: 10rem;
@@ -511,10 +566,11 @@ hr {
   filter: drop-shadow(0 5px 10px #f4b625);
 }
 
-.scene:active .rocket svg {
+.scene:active .rocket .rocket-svg {
   fill: #fff;
 }
 
+/* 
 h3.purna {
   font-family: purna;
   margin-top: 20px;
@@ -527,29 +583,4 @@ h3.purna {
 h3.purna:hover {
   color: #fcb613;
 }
-.version {
-  color: #ae882f;
-  text-align: center;
-  margin-top: -1.5rem;
-  /* text-decoration: underline; */
-  word-spacing: 0.5rem;
-}
-
-.btn-gold {
-  background: radial-gradient(
-      ellipse farthest-corner at right bottom,
-      #fedb37 0%,
-      #fdb931 8%,
-      #9f7928 30%,
-      #8a6e2f 40%,
-      transparent 80%
-    ),
-    radial-gradient(
-      ellipse farthest-corner at left top,
-      #ffffff 0%,
-      #ffffac 8%,
-      #d1b464 25%,
-      #5d4a1f 62.5%,
-      #5d4a1f 100%
-    );
-}
+ */
