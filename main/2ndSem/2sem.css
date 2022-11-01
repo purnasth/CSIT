@@ -247,7 +247,7 @@ ul.CTAs a {
 }
 
 #sidebar .sidebar-header h3 {
-  font-family: "Poppins", sans-serif;;
+  font-family: "Poppins", sans-serif;
   letter-spacing: 4px;
   font-size: 2rem;
   color: #000;
@@ -291,7 +291,7 @@ hr {
 }
 
 .title {
-  font-family: "Poppins", sans-serif;;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   letter-spacing: 4px;
   line-height: 10rem;
@@ -308,8 +308,6 @@ hr {
   /* color: #fcb613; */
   color: #fff;
 }
-
-
 
 .version {
   color: #000;
@@ -493,8 +491,7 @@ hr {
 .content-wrapper .container .card .card-body p:hover {
   color: #000;
 }
-h6
-{
+h6 {
   padding: 1.5rem;
 }
 .btn-info {
@@ -602,15 +599,14 @@ h6
   .card-header h5 {
     font-size: 1rem;
   }
-  h6
-  {
+  h6 {
     /* color:red!important; */
     padding: 10px;
-    font-size: 1rem!important;
+    font-size: 1rem !important;
   }
-  ol,li
-  {
-    font-size: 0.9rem!important;
+  ol,
+  li {
+    font-size: 0.9rem !important;
   }
 
   .btn-info {
