@@ -460,7 +460,7 @@ hr {
 .card-header h5 {
   color: #252525;
   font-size: 1.15rem;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-out;
 }
 .card-header h5:hover,
 .card-header h5:active {
@@ -480,7 +480,7 @@ hr {
 .content-wrapper .container .card .card-body ol,
 .content-wrapper .container .card .card-body li,
 .content-wrapper .container .card .card-body p {
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   color: #252525;
   transition: all 0.3 ease-in-out;
   margin-left: 2rem;
@@ -621,4 +621,68 @@ h6 {
     float: right;
     /* margin-right: 5rem; */
   }
+}
+
+.content_wrapper {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: transparent !important;
+  margin-top: -5rem;
+}
+
+.syllabus-title {
+  font-size: 1.25rem !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.syllabus_header p {
+  text-align: center;
+  font-weight: 600;
+}
+
+.syllabus_container {
+  background-color: transparent !important;
+  padding: 2rem;
+}
+
+.syllabus_item span {
+  float: right;
+}
+
+h5.syllabus_title,
+.syllabus_item h6 {
+  font-weight: 700;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1);
+}
+.content_wrapper strong {
+  font-weight: 700;
+}
+.labwork {
+  font-size: 1.2rem;
+  margin-left: 30px;
+}
+.labwork ul li {
+  list-style-type: lower-alpha;
+  font-size: 1em !important;
+  font-weight: 500;
+  gap: 50px !important;
+}
+
+
+
+
+table tbody tr td
+{
+  padding: 0.5em;
+  border-color: #000;
+  cursor: pointer;
+}
+table:hover tbody tr td
+{
+  color: #000;
+  /* transition: all 0.15s ease-in-out; */
 }

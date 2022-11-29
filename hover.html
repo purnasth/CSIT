@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Placeholder</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      body {
+        background-color: #1d2b3a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 100vh;
+        gap: 30px;
+      }
+      .inputBox {
+        position: relative;
+        width: 250px;
+      }
+      .inputBox input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid rgba(255,255,255,0.25);
+        border-radius: 5px;
+        outline: none;
+        background-color: #1d2b3a;
+        color: #fff;
+        font-size: 1em;
+      }
+      .inputBox span
+      {
+        position: absolute;
+        left: 0;
+        padding: 10px;
+        pointer-events: none;
+        font-size: 1em;
+        color: rgba(255,255,255,0.25);
+        text-transform: uppercase;
+        transition: 0.5s;
+      }
+      .inputBox input:valid ~span,
+      .inputBox input:focus ~span
+      {
+        padding: 5px;
+        color: #00dfc4;
+        font-size: 0.65em;
+        /* transform: translate(10px,-7px); */
+        transform: translateX(10px) translateY(-13px);
+        background-color: #1d2b3a;
+        border-left: 1px solid #00dfc4;
+        border-right: 1px solid #00dfc4;
+        letter-spacing: 0.2em;
+        border-radius: 0.25em;
+      }
+      .inputBox:nth-child(2) input:valid ~span,
+      .inputBox:nth-child(2) input:focus ~span
+      {
+        background-color: #00dfc4;
+        color: #1d2b3a;
+        border-radius: 2px;
+      }
+      .inputBox input:valid,
+      .inputBox input:focus
+      {
+        border: 1px solid #00dfc4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="inputBox">
+      <input type="text" required="required" />
+      <span>First Name</span>
+    </div>
+    <div class="inputBox">
+      <input type="text" required="required" />
+      <span>Last Name</span>
+    </div>
+  </body>
+</html>
