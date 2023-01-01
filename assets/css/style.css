@@ -85,13 +85,13 @@ a:focus {
 }
 .navbar {
   padding: 15px 10px;
-  background: transparent !important;
   border: none;
   border-radius: 0;
   /* margin-bottom: 40px; */
   /* box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); */
   z-index: 99;
-  width: 99vw;
+  width: 100vw;
+  background: transparent;
 }
 .navbar-btn {
   box-shadow: none;
@@ -242,7 +242,7 @@ ul.CTAs a {
 }
 
 #sidebar {
-  background-color: transparent;
+  background: transparent;
   height: 100vh;
   position: fixed;
   z-index: 1;
@@ -284,6 +284,7 @@ ul.CTAs a {
       #5d4a1f 62.5%,
       #5d4a1f 100%
     );
+    z-index: 9999;
 }
 .btn-gold:active:hover {
   background: #fff;
