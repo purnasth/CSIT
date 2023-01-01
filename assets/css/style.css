@@ -66,6 +66,10 @@ body {
       transparent 80%
     );
 }
+sub,
+sup {
+  font-size: 0.7rem;
+}
 p {
   font-size: 1.1em;
   font-weight: 300;
@@ -86,7 +90,7 @@ a:focus {
   border-radius: 0;
   /* margin-bottom: 40px; */
   /* box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); */
-  z-index: 9999;
+  z-index: 99;
   width: 99vw;
 }
 .navbar-btn {

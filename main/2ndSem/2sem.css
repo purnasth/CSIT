@@ -1,27 +1,7 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: "Poppins", sans-serif;
-  /* background-color: #000; */
-  min-height: 100vh;
-  background: radial-gradient(
-      ellipse farthest-corner at left bottom,
-      #fedb37 0%,
-      #fdb931 8%,
-      #9f7928 30%,
-      #8a6e2f 40%,
-      transparent 80%
-    ),
-    radial-gradient(
-      ellipse farthest-corner at right top,
-      /* #ffffff 0%, */ /* #ffffac 8%, */ #d1b464 25%,
-      #5d4a1f 62.5%,
-      #5d4a1f 100%
-    );
+@font-face {
+  font-family: title;
+  src: url(/assets/fonts/ProcrastinatingPixie-WyVOO.ttf);
 }
 ::-webkit-scrollbar {
   width: 0.5rem;
@@ -71,6 +51,34 @@ body {
       transparent 80%
     );
 }
+::selection{
+  background-color: #252525;
+  color: #8a6e2f;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  /* background-color: #000; */
+  min-height: 100vh;
+  background: radial-gradient(
+      ellipse farthest-corner at left bottom,
+      #fedb37 0%,
+      #fdb931 8%,
+      #9f7928 30%,
+      #8a6e2f 40%,
+      transparent 80%
+    ),
+    radial-gradient(
+      ellipse farthest-corner at right top,
+      /* #ffffff 0%, */ /* #ffffac 8%, */ #d1b464 25%,
+      #5d4a1f 62.5%,
+      #5d4a1f 100%
+    );
+}
 p {
   font-size: 1.1em;
   font-weight: 300;
@@ -84,15 +92,19 @@ a:focus {
   text-decoration: none;
   transition: all 0.3s;
 }
+sub, sup{
+  font-size: 0.7rem;
+}
 .navbar {
   padding: 15px 10px;
-  background: transparent !important;
+  /* background: transparent !important; */
   border: none;
   border-radius: 0;
   /* margin-bottom: 40px; */
   /* box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); */
-  z-index: 9;
-  width: 99vw;
+  z-index: 99;
+  position: fixed;
+  /* //!!! changed */
 }
 .navbar-btn {
   box-shadow: none;
@@ -105,7 +117,8 @@ a:focus {
   border-bottom: 1px dashed #000;
 }
 .wrapper {
-  display: flex;
+  /* display: flex; */ 
+  /* !!changed */
   width: 100%;
   align-items: stretch;
 }
@@ -247,7 +260,8 @@ ul.CTAs a {
 }
 
 #sidebar .sidebar-header h3 {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: title;
   letter-spacing: 4px;
   font-size: 2rem;
   color: #000;
@@ -354,9 +368,10 @@ hr {
 
 /* PORTFOLIO BUTTON*/
 .portfolio-button button {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: title;
   font-size: 1.45rem;
-  padding: 0.4em 1em;
+  padding: 0.6em 1em;
   position: relative;
   display: flex;
   align-items: center;
@@ -381,8 +396,8 @@ hr {
       #5d4a1f 62.5%,
       #5d4a1f 100%
     );
-  outline: solid 1.5px #9f7928;
-  outline-offset: 1px;
+  outline: solid 1px #000;
+  outline-offset: 1.5px;
 }
 .portfolio-button button:hover {
   transition: 0.5s ease-in-out;
@@ -442,19 +457,26 @@ hr {
 
 .content-wrapper {
   background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /*  //! changed*/
 }
 .content-wrapper .container {
   background-color: transparent;
   padding: 0;
-  margin: 0 auto;
-  margin-top: -70px;
+  /* margin: 0 auto; */
+  /* margin-top: -70px; */
+  /* margin-left: 80%; */
 }
 .content-wrapper .container .card {
   background-color: transparent;
   padding: 2em !important;
   margin: -50px 0;
   border: 0;
-  z-index: 3;
+  /* z-index: 3; */
+  /* !changes important */
 }
 .card-header h5 {
   color: #252525;
@@ -532,6 +554,7 @@ h6 {
 }
 
 .btn-info span {
+  font-family: title;
   display: block;
   transition: all 0.3s ease-in-out;
   margin-left: -15px;
@@ -619,11 +642,7 @@ h6 {
 }
 
 .content_wrapper {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background: transparent !important;
-  margin-top: -5rem;
+  background: transparent;
 }
 
 .syllabus-title {
@@ -723,7 +742,7 @@ table:hover tbody tr td {
   position: relative;
   width: 60%;
   min-height: 100vh;
-  z-index: 9;
+  z-index: 999;
 }
 @media screen and (max-width: 569px) {
   .modal-container .modal-background .modal {
@@ -760,31 +779,10 @@ table:hover tbody tr td {
   background: transparent;
   position: relative;
   z-index: 0;
-}
-.content h1 {
-  padding: 75px 0 30px 0;
-  text-align: center;
-  font-size: 30px;
-  line-height: 30px;
-}
-/* .content .buttons {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
-} */
-.content .buttons .button {
-  /* display: inline-block; */
-  /* text-align: center; */
-  /* padding: 10px 15px; */
-  /* margin: 10px; */
-  /* font-size: 18px; */
-  /* background-color: #efefef; */
-  /* border-radius: 3px; */
-  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); */
   cursor: pointer;
+
 }
-.content .buttons .button:hover {
+.content .button:hover {
   color: #000;
   /* background: #009bd5; */
 }
@@ -889,9 +887,28 @@ table:hover tbody tr td {
   }
 } */
 
-.modal img,
-.modal p {
-  overflow-y: scroll;
+/* .modal img, */
+/* .modal p {
+  overflow: scroll;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+} */
+.card-body .question-and-answer .modal-container .modal-background .modal img{
+  overflow: scroll;
   overflow-x: hidden;
   scrollbar-width: thin;
 }
+/* .modal{
+  overflow: scroll;
+}
+.modal::-webkit-scrollbar{
+  width: 0.5em;
+  height: 200%;
+  margin-top: -50vh;
+} */
+
+
+/* iframe{
+  width: 1000px;
+  background-size: cover;
+} */

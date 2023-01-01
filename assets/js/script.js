@@ -1,6 +1,7 @@
 //For button animation show
 $(".button").click(function () {
-  const modal = $(this).parent().parent().parent().find(".modal-container");
+  // const modal = $(this).parent().parent().parent().find(".modal-container");
+  const modal = $(this).parent().parent().find(".modal-container");
   modal.removeAttr("class").addClass("modal-container show-content");
   $("body").addClass("modal-active");
 });

@@ -32,9 +32,6 @@
       #headingEleven {
         z-index: 9;
       }
-      .syllabus_header {
-        margin-top: 3em;
-      }
     </style>
   </head>
   <body className="snippet-body">
@@ -58,31 +55,28 @@
             </a>
             <ul class="collapse list-unstyled" id="pageSubmenu">
               <li>
-                <a href="/main/2ndSem/discrete/discrete.html" target="_blank"
+                <!-- <a href="/main/2ndSem/discrete/discrete.html" target="_blank"
+                  >Discrete Structure</a
+                > -->
+                <a href="../discrete/discrete.html" target="_blank"
                   >Discrete Structure</a
                 >
               </li>
               <li>
-                <a href="/main/2ndSem/oop/oop.html" target="_blank"
+                <a href="../oop/oop.html" target="_blank"
                   >Object-Oriented Programming</a
                 >
               </li>
               <li>
-                <a
-                  href="/main/2ndSem/microprocessor/microprocessor.html"
-                  target="_blank"
+                <a href="../microprocessor/microprocessor.html" target="_blank"
                   >Microprocessor</a
                 >
               </li>
               <li class="active">
-                <a href="/main/1stSem/maths/maths.html" target="_blank"
-                  >Mathematics II</a
-                >
+                <a href="../maths/maths.html" target="_blank">Mathematics II</a>
               </li>
               <li>
-                <a
-                  href="/main/2ndSem//Statistics/statistics.html"
-                  target="_blank"
+                <a href="../Statistics/statistics.html" target="_blank"
                   >Statistics I
                 </a>
               </li>
@@ -235,14 +229,16 @@
             </a>
           </div>
         </ul>
-        <p class="version">&copy;2022 v1.2.1</p>
+        <p class="version">&copy;2022 v1.2.1 Beta</p>
       </nav>
       <div class="content">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- <nav class="navbar navbar-expand-lg navbar-light"> -->
+        <nav class="navbar">
           <button type="button" id="sidebarCollapse" class="btn btn-gold">
             <i class="fa fa-align-justify"></i>
           </button>
-          <button
+          <!-- Left button toggler -->
+          <!-- <button
             class="navbar-toggler"
             type="button"
             data-toggle="collapse"
@@ -252,10 +248,10 @@
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          </button> -->
+          <!-- <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-              <!-- <li class="nav-item active">
+              <li class="nav-item active">
                 <a class="nav-link" href="#"
                   >Home <span class="sr-only">(current)</span></a
                 >
@@ -268,10 +264,10 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
-              </li> -->
+              </li>
             </ul>
             <span class="title">Maths II</span>
-          </div>
+          </div> -->
         </nav>
 
         <div class="content-wrapper">
@@ -313,280 +309,203 @@
                   data-parent="#accordionExample"
                 >
                   <div class="card-body">
-                    <div class="content_wrapper py-3 entrance_course pt-4">
-                      <div class="course-single">
-                        <div class="container">
-                          <div class="row">
-                            <div class="col-md-12">
-                              <div class="course-single-wrapper pb-5">
-                                <div class="course-single-tab">
-                                  <div class="tab-content pt-4">
-                                    <div class="tab-pane fade active show">
-                                      <div
-                                        class="row shadow-sm syllabus_container pb-5"
-                                      >
-                                        <div class="col-12">
-                                          <div
-                                            class="syllabus_header pt-3 pb-5"
-                                          >
-                                            <p>Tribhuvan University</p>
-                                            <p>
-                                              Institute of Science and
-                                              Technology
-                                            </p>
-                                            <p>
-                                              Bachelor of Science in Computer
-                                              Science and Information Technology
-                                            </p>
-                                          </div>
-                                        </div>
-                                        <div
-                                          class="row complete_header_syllabus ps-5 pr-4"
-                                        >
-                                          <div class="col-md-6">
-                                            <div class="marks_header">
-                                              <p>
-                                                <strong>Course Title : </strong
-                                                >Mathematics II
-                                              </p>
-                                              <p>
-                                                <strong>Course no:</strong>
-                                                MTH163
-                                              </p>
-                                              <p>
-                                                <strong>Semester:</strong> II
-                                              </p>
-                                              <p>
-                                                <strong
-                                                  >Nature of course:</strong
-                                                >
-                                                Theory + Practice
-                                              </p>
-                                            </div>
-                                          </div>
-                                          <div class="col-md-6">
-                                            <div
-                                              class="marks_header marks_header_right"
-                                              style="float: right"
-                                            >
-                                              <p>
-                                                <strong>Full Marks:</strong> 80
-                                              </p>
-                                              <p>
-                                                <strong>Pass Marks:</strong> 32
-                                              </p>
-                                              <p>
-                                                <strong>Credit Hours:</strong> 3
-                                              </p>
-                                            </div>
-                                          </div>
+                    <div class="content_wrapper">
+                      <div class="row shadow-sm syllabus_container">
+                        <div class="col-12">
+                          <div class="syllabus_header pt-3 pb-5">
+                            <p>Tribhuvan University</p>
+                            <p>Institute of Science and Technology</p>
+                            <p>
+                              Bachelor of Science in Computer Science and
+                              Information Technology
+                            </p>
+                          </div>
+                        </div>
+                        <div class="row complete_header_syllabus ps-5 pr-4">
+                          <div class="col-md-6">
+                            <div class="marks_header">
+                              <p>
+                                <strong>Course Title : </strong>Mathematics II
+                              </p>
+                              <p>
+                                <strong>Course no:</strong>
+                                MTH163
+                              </p>
+                              <p><strong>Semester:</strong> II</p>
+                              <p>
+                                <strong>Nature of course:</strong>
+                                Theory + Practice
+                              </p>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div
+                              class="marks_header marks_header_right"
+                              style="float: right"
+                            >
+                              <p><strong>Full Marks:</strong> 80</p>
+                              <p><strong>Pass Marks:</strong> 32</p>
+                              <p><strong>Credit Hours:</strong> 3</p>
+                            </div>
+                          </div>
 
-                                          <div class="col-md-12 pt-3">
-                                            <p>
-                                              <strong
-                                                >Course Description :
-                                              </strong>
-                                              The course contains concepts and
-                                              techniques of linear algebra. The
-                                              course topics include systems of
-                                              linear equations, determinants,
-                                              vectors and vector spaces,
-                                              eigenvalues and eigenvectors and
-                                              singular value decomposition of
-                                              matrix.
-                                            </p>
-                                            <p>
-                                              <strong
-                                                >Course Objective :
-                                              </strong>
-                                              The main objective of the course
-                                              is to make students familiar with
-                                              the concepts and techniques in
-                                              linear algebra,, solve system of
-                                              linear equations with Gauss-Jordan
-                                              method, to impart knowledge of
-                                              vector space and subspace,
-                                              eigenvalues and eigenvectors of a
-                                              matrix and get the idea of
-                                              diagonalization of a matrix,
-                                              linear programming, Group, Rings
-                                              and Fields.
-                                            </p>
-                                            <h5 class="mt-4 mt-0">
-                                              Course Contents:
-                                            </h5>
+                          <div class="col-md-12 pt-3">
+                            <p>
+                              <strong>Course Description : </strong>
+                              The course contains concepts and techniques of
+                              linear algebra. The course topics include systems
+                              of linear equations, determinants, vectors and
+                              vector spaces, eigenvalues and eigenvectors and
+                              singular value decomposition of matrix.
+                            </p>
+                            <p>
+                              <strong>Course Objective : </strong>
+                              The main objective of the course is to make
+                              students familiar with the concepts and techniques
+                              in linear algebra,, solve system of linear
+                              equations with Gauss-Jordan method, to impart
+                              knowledge of vector space and subspace,
+                              eigenvalues and eigenvectors of a matrix and get
+                              the idea of diagonalization of a matrix, linear
+                              programming, Group, Rings and Fields.
+                            </p>
+                            <h5 class="mt-4 mt-0">Course Contents:</h5>
 
-                                            <div class="syllabus_item">
-                                              <a href="#">
-                                                <h6>
-                                                  Unit 3. Matrix Algebra
-                                                  <span>5 Hrs.</span>
-                                                </h6>
-                                                <p>
-                                                  Matrix operations, The inverse
-                                                  of a matrix, Characterizations
-                                                  of invertible matrices,
-                                                  Partitioned matrices, Matrix
-                                                  factorization, The Leontief
-                                                  input output model, Subspace
-                                                  of Rn, Dimension and rank
-                                                </p>
-                                              </a>
-                                            </div>
-                                            <div class="syllabus_item">
-                                              <a href="#">
-                                                <h6>
-                                                  Unit 4. Determinants
-                                                  <span>4 Hrs.</span>
-                                                </h6>
-                                                <p>
-                                                  Introduction, Properties,
-                                                  Cramer's rule, Volume and
-                                                  linear transformations
-                                                </p>
-                                              </a>
-                                            </div>
-                                            <div class="syllabus_item">
-                                              <a href="#">
-                                                <h6>
-                                                  Unit 5. Vector Spaces
-                                                  <span>5 Hrs.</span>
-                                                </h6>
-                                                <p>
-                                                  Vector spaces and subspaces,
-                                                  Null spaces, Column spaces,
-                                                  and Linear transformations,
-                                                  Linearly independent sets:
-                                                  Bases, Coordinate systems
-                                                </p>
-                                              </a>
-                                            </div>
-                                            <div class="syllabus_item">
-                                              <a href="#">
-                                                <h6>
-                                                  Unit 6. Vector Space Continued
-                                                  <span>4 Hrs.</span>
-                                                </h6>
-                                                <p>
-                                                  Dimension of vector space and
-                                                  Rank, Change of basis,
-                                                  Applications to difference
-                                                  equations, Applications to
-                                                  Markov Chains
-                                                </p>
-                                              </a>
-                                            </div>
-                                            <div class="syllabus_item">
-                                              <a href="#">
-                                                <h6>
-                                                  Unit 7. Eigenvalues and Eigen
-                                                  Vectors
-                                                  <span>5 Hrs.</span>
-                                                </h6>
-                                                <p>
-                                                  Eigenvectors and Eigenvalues,
-                                                  The characteristic equations,
-                                                  Diagonalization, Eigenvectors
-                                                  and linear transformations,
-                                                  Complex eigenvalues, Discrete
-                                                  dynamical systems,
-                                                  Applications to differential
-                                                  equations
-                                                </p>
-                                              </a>
-                                            </div>
-                                            <div class="syllabus_item">
-                                              <a href="#">
-                                                <h6>
-                                                  Unit 8. Orthogonality and
-                                                  Least Squares
-                                                  <span>5 Hrs.</span>
-                                                </h6>
-                                                <p>
-                                                  Inner product, Length, and
-                                                  orthogonality, Orthogonal
-                                                  sets, Orthogonal projections,
-                                                  The Gram Schmidt process,
-                                                  Least squares problems,
-                                                  Application to linear models,
-                                                  Inner product spaces,
-                                                  Applications of inner product
-                                                  spaces
-                                                </p>
-                                              </a>
-                                            </div>
-                                            <div class="syllabus_item">
-                                              <a href="#">
-                                                <h6>
-                                                  Unit 9. Groups and Subgroups
-                                                  <span>5 Hrs.</span>
-                                                </h6>
-                                                <p>
-                                                  Binary Operations, Groups,
-                                                  Subgroups, Cyclic Groups
-                                                </p>
-                                              </a>
-                                            </div>
-                                            <div class="syllabus_item">
-                                              <a href="#">
-                                                <h6>
-                                                  Unit 10. Rings and Fields
-                                                  <span>4 Hrs.</span>
-                                                </h6>
-                                                <p>
-                                                  Rings and Fields, Integral
-                                                  domains
-                                                </p>
-                                              </a>
-                                            </div>
+                            <div class="syllabus_item">
+                              <a href="#">
+                                <h6>
+                                  Unit 3. Matrix Algebra
+                                  <span>5 Hrs.</span>
+                                </h6>
+                                <p>
+                                  Matrix operations, The inverse of a matrix,
+                                  Characterizations of invertible matrices,
+                                  Partitioned matrices, Matrix factorization,
+                                  The Leontief input output model, Subspace of
+                                  Rn, Dimension and rank
+                                </p>
+                              </a>
+                            </div>
+                            <div class="syllabus_item">
+                              <a href="#">
+                                <h6>
+                                  Unit 4. Determinants
+                                  <span>4 Hrs.</span>
+                                </h6>
+                                <p>
+                                  Introduction, Properties, Cramer's rule,
+                                  Volume and linear transformations
+                                </p>
+                              </a>
+                            </div>
+                            <div class="syllabus_item">
+                              <a href="#">
+                                <h6>
+                                  Unit 5. Vector Spaces
+                                  <span>5 Hrs.</span>
+                                </h6>
+                                <p>
+                                  Vector spaces and subspaces, Null spaces,
+                                  Column spaces, and Linear transformations,
+                                  Linearly independent sets: Bases, Coordinate
+                                  systems
+                                </p>
+                              </a>
+                            </div>
+                            <div class="syllabus_item">
+                              <a href="#">
+                                <h6>
+                                  Unit 6. Vector Space Continued
+                                  <span>4 Hrs.</span>
+                                </h6>
+                                <p>
+                                  Dimension of vector space and Rank, Change of
+                                  basis, Applications to difference equations,
+                                  Applications to Markov Chains
+                                </p>
+                              </a>
+                            </div>
+                            <div class="syllabus_item">
+                              <a href="#">
+                                <h6>
+                                  Unit 7. Eigenvalues and Eigen Vectors
+                                  <span>5 Hrs.</span>
+                                </h6>
+                                <p>
+                                  Eigenvectors and Eigenvalues, The
+                                  characteristic equations, Diagonalization,
+                                  Eigenvectors and linear transformations,
+                                  Complex eigenvalues, Discrete dynamical
+                                  systems, Applications to differential
+                                  equations
+                                </p>
+                              </a>
+                            </div>
+                            <div class="syllabus_item">
+                              <a href="#">
+                                <h6>
+                                  Unit 8. Orthogonality and Least Squares
+                                  <span>5 Hrs.</span>
+                                </h6>
+                                <p>
+                                  Inner product, Length, and orthogonality,
+                                  Orthogonal sets, Orthogonal projections, The
+                                  Gram Schmidt process, Least squares problems,
+                                  Application to linear models, Inner product
+                                  spaces, Applications of inner product spaces
+                                </p>
+                              </a>
+                            </div>
+                            <div class="syllabus_item">
+                              <a href="#">
+                                <h6>
+                                  Unit 9. Groups and Subgroups
+                                  <span>5 Hrs.</span>
+                                </h6>
+                                <p>
+                                  Binary Operations, Groups, Subgroups, Cyclic
+                                  Groups
+                                </p>
+                              </a>
+                            </div>
+                            <div class="syllabus_item">
+                              <a href="#">
+                                <h6>
+                                  Unit 10. Rings and Fields
+                                  <span>4 Hrs.</span>
+                                </h6>
+                                <p>Rings and Fields, Integral domains</p>
+                              </a>
+                            </div>
 
-                                            <div class="labwork">
-                                              <h5
-                                                class="mt-4 pb-3 syllabus_title"
-                                              >
-                                                Text Books:
-                                              </h5>
-                                              <ul class="book_list">
-                                                <li>
-                                                  Linear Algebra and Its'
-                                                  Applications, David C. Lay,
-                                                  4thEditon, Pearson Addison
-                                                  Wesley.
-                                                </li>
-                                                <li>
-                                                  Linear Algebra and Its'
-                                                  Application, Gilbert Strang,
-                                                  4thEdition, Addison, CENGAGE
-                                                  Learning.
-                                                </li>
-                                                <li>
-                                                  A First Course in Abstract
-                                                  Algebra, John B. Farleigh, 7th
-                                                  Edition, Pearson
-                                                </li>
-                                              </ul>
-                                              <h5
-                                                class="mt-4 pb-3 syllabus_title"
-                                              >
-                                                Reference Books:
-                                              </h5>
-                                              <ul class="book_list">
-                                                <li>
-                                                  Mathematics II, B. Sc. Second
-                                                  Semester, New Edition, Binod
-                                                  Prasad Dhakal and etal, KEC
-                                                  Publication and Distribution
-                                                  Pvt. Ltd.
-                                                </li>
-                                              </ul>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+                            <div class="labwork">
+                              <h5 class="mt-4 pb-3 syllabus_title">
+                                Text Books:
+                              </h5>
+                              <ul class="book_list">
+                                <li>
+                                  Linear Algebra and Its' Applications, David C.
+                                  Lay, 4thEditon, Pearson Addison Wesley.
+                                </li>
+                                <li>
+                                  Linear Algebra and Its' Application, Gilbert
+                                  Strang, 4thEdition, Addison, CENGAGE Learning.
+                                </li>
+                                <li>
+                                  A First Course in Abstract Algebra, John B.
+                                  Farleigh, 7th Edition, Pearson
+                                </li>
+                              </ul>
+                              <h5 class="mt-4 pb-3 syllabus_title">
+                                Reference Books:
+                              </h5>
+                              <ul class="book_list">
+                                <li>
+                                  Mathematics II, B. Sc. Second Semester, New
+                                  Edition, Binod Prasad Dhakal and etal, KEC
+                                  Publication and Distribution Pvt. Ltd.
+                                </li>
+                              </ul>
                             </div>
                           </div>
                         </div>
@@ -600,34 +519,41 @@
               <!-- Chapter 1 -->
               <div class="card">
                 <div class="card-header" id="headingOne">
-                  <h2 class="mb-0">
-                    <button
-                      class="btn btn-link collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      <h5>
-                        Chapter: 1
-                        <strong>Linear equations in linear Algebra</strong>
-                      </h5>
-                    </button>
-                    <button
-                      class="btn btn-info"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      <div class="wrapper">
-                        <i class="bi bi-envelope-open-fill btn-svg"></i>
-                      </div>
-                      <span>questions</span>
-                    </button>
-                  </h2>
+                  <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    <h5>
+                      Chapter: 1
+                      <strong>Linear equations in linear Algebra</strong>
+                    </h5>
+                  </button>
+                  <!-- <input
+                    type="button"
+                    id="check-one"
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                    value="Chapter: 1 Linear equations in linear Algebra"
+                  /> -->
+                  <button
+                    class="btn btn-info"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    <i class="bi bi-envelope-open-fill btn-svg"></i>
+                    <span>questions</span>
+                  </button>
                 </div>
                 <div
                   id="collapseOne"
@@ -644,20 +570,21 @@
                       <div class="modal-container">
                         <div class="modal-background">
                           <div class="modal">
-                            <img src="https://images.sampletemplates.com/wp-content/uploads/2015/01/Romantic-Love-Letter-for-Her.jpg"/>
-                            <h2>I'm Purna Shrestha.</h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, repellendus ipsam voluptas adipisci sed cupiditate aperiam minus voluptates obcaecati possimus! Suscipit, ratione. Nulla, obcaecati sapiente. Blanditiis asperiores libero, eum deserunt ab perferendis sapiente similique qui ad aut? Vel repellat, voluptatum corrupti laborum amet architecto nesciunt, minus cum porro perferendis numquam officia ducimus earum quis atque ad, ipsa adipisci blanditiis vero pariatur laudantium. Consequuntur, illo! Expedita, minus! Ipsa architecto exercitationem, voluptatibus necessitatibus provident, magni quidem tempora ad eligendi ratione nulla corrupti, nam quod quia assumenda consectetur voluptatum voluptate est harum molestiae recusandae voluptatem quasi culpa. Accusamus cumque unde laboriosam architecto minus assumenda voluptatum quisquam, dolor nostrum ab vitae! Repellat a, tempore, possimus vitae atque, sint reiciendis qui modi dicta debitis temporibus quidem ratione doloremque? Quisquam, ea? Eos, assumenda officiis quaerat, deserunt consequuntur molestias placeat distinctio, velit corporis porro illum modi eaque atque. Facere necessitatibus temporibus placeat! Ducimus dolore provident fugiat illo odit modi, beatae similique quos? Saepe suscipit dolores cum porro atque omnis, fugiat est ipsa placeat facilis ab dignissimos provident veniam iusto unde sit adipisci a optio laborum nesciunt quibusdam accusantium quaerat pariatur. Minima rerum quod, possimus quasi ipsam deleniti neque maiores asperiores sed, provident perferendis odit, natus quas aperiam ab voluptatum eligendi sapiente eos quisquam atque. Dignissimos recusandae, dolores hic totam tenetur voluptatibus, eum, cumque aspernatur maxime debitis quibusdam. Ipsam soluta pariatur maiores quo reprehenderit unde, voluptas magni explicabo libero, ad sit eligendi nemo tempora totam id praesentium accusamus maxime, dolores rerum. Dicta aperiam quaerat aliquid ratione at illo tempora neque perferendis. Expedita est corporis exercitationem, similique laboriosam animi vero culpa, fugit repellat illum aut fuga ad aperiam alias, rerum beatae itaque eveniet mollitia ullam nemo labore. Cupiditate voluptatem nostrum veritatis suscipit vel vero dolorem minima porro deserunt quidem, tenetur earum nobis accusantium totam! Dicta sapiente provident esse omnis mollitia dolor ipsa eius expedita distinctio. Saepe inventore eligendi nesciunt minus voluptas expedita eos et repellat, esse obcaecati officiis incidunt ad ab quod excepturi, deleniti cumque iure? Ratione voluptatum adipisci doloribus natus! Labore nihil nesciunt sunt quibusdam veritatis qui maiores dolorum recusandae illum voluptatibus placeat quidem, earum temporibus quod sapiente itaque neque amet? Explicabo voluptatem provident molestiae adipisci vero numquam vitae consequuntur, harum veritatis repudiandae accusamus, debitis ut natus alias quia quaerat molestias assumenda, neque quas laborum. Provident, beatae sit doloremque aspernatur, et eveniet fugiat natus amet eaque pariatur maiores labore animi accusantium perspiciatis possimus impedit corporis ipsum error deserunt at iure, quis quidem alias dolorem. Quo suscipit ratione laudantium illum eos, ducimus pariatur blanditiis nihil veniam corrupti in ea soluta recusandae. Corporis quae, expedita minus quia quibusdam molestias nesciunt ex distinctio at incidunt itaque animi velit vel illo repellendus unde autem fuga molestiae accusantium veniam impedit a, modi quas? Officia, voluptate. Minus, maiores vitae! Cumque repellat quod odio praesentium nam cupiditate aspernatur repellendus, pariatur nesciunt magni repudiandae est fugiat voluptas inventore ipsum, rem quidem voluptatum sed velit a esse perspiciatis laboriosam. Quo voluptas saepe sunt dolorum id autem minus adipisci, deserunt architecto, nobis corrupti tempora tenetur quod dolore ex iusto ad! Deleniti rem perspiciatis itaque eum amet a enim eaque necessitatibus suscipit! Velit modi quos est eligendi assumenda cumque cupiditate nemo ipsam neque nihil voluptas aspernatur in sint consequuntur mollitia at delectus, ullam ipsum provident voluptatibus ad sunt autem expedita vel. Praesentium, vel dicta. Praesentium, quas. Illo dicta repellat eligendi alias sapiente voluptas obcaecati, minus modi hic optio, ad non cupiditate autem. Illo voluptate, illum adipisci consectetur ducimus porro et maxime excepturi hic enim animi! Accusamus veniam iure minima beatae nobis, eligendi tempore error dolorum nostrum nisi recusandae, quas ipsam similique tenetur est porro quasi facilis fugiat dolore sit. Ipsa consectetur reiciendis laborum saepe a accusantium quidem incidunt aperiam nisi, quaerat, eos laboriosam officiis iste perspiciatis provident, odit velit? Voluptatem dolorem veritatis hic similique laborum earum iure maxime repudiandae expedita, reiciendis tempora perspiciatis ipsum nam harum esse numquam quae qui fugit sint! Hic, reiciendis! Modi reiciendis quis eum assumenda dolorem, enim quam animi numquam nulla et similique, tenetur blanditiis in! Quod, sunt? Eius eaque iusto eos, est ut quaerat ducimus sunt inventore blanditiis modi eligendi debitis nostrum omnis quibusdam esse id veritatis ea sint quos. Sed ea atque sint, id debitis fugit doloremque enim, facilis modi assumenda ad facere maiores iste consectetur. Ipsam, doloribus inventore. Similique illum aperiam sint accusamus doloremque? Exercitationem libero cupiditate consequatur, pariatur quod harum ratione neque voluptatibus, asperiores maxime odit id officia incidunt adipisci rem maiores laboriosam repudiandae, temporibus consectetur vel voluptates excepturi quaerat. Nisi ipsum nostrum, aut porro alias voluptatibus error aliquam quaerat tenetur. Deserunt dicta, illum quod natus suscipit deleniti dolores accusantium velit dolore labore in corporis aliquid inventore quis facilis sit laudantium optio quasi rerum iste ullam itaque perspiciatis quaerat! Autem voluptatum iure accusamus quia, perspiciatis repudiandae quod illo officiis aliquam id voluptate architecto recusandae ipsam odio accusantium tempore labore reprehenderit quas. Perspiciatis soluta eligendi, animi reiciendis autem quos ad laboriosam repudiandae itaque, error consequuntur voluptas natus in eveniet adipisci, a nesciunt officiis! Praesentium natus vitae minima molestiae ipsa labore fuga nemo a quo? Voluptatibus modi ratione inventore repellat nihil dolore pariatur optio architecto nesciunt voluptatum, eum obcaecati, impedit itaque. Aspernatur molestias quaerat, provident pariatur iusto officiis beatae cumque ducimus nostrum ipsa corrupti quidem, animi vero delectus ut. Maxime fugit vel corporis itaque architecto nobis unde molestiae voluptatem earum cupiditate veritatis cumque vitae a autem, hic et tenetur quo laboriosam officiis blanditiis accusamus. Molestiae neque omnis ullam repellendus explicabo exercitationem quo, porro temporibus blanditiis molestias eius facere saepe ducimus enim repellat earum laboriosam iure! Itaque velit vero maxime soluta qui ex doloribus odit suscipit est rerum repellat similique quae expedita sequi vel corporis veritatis ullam eius doloremque, quas voluptates dolor recusandae. Eligendi natus nulla voluptates quidem nam modi, aspernatur minima debitis optio maiores voluptatibus minus explicabo blanditiis expedita? Quasi quaerat, culpa doloremque facere est adipisci accusantium maxime, ut similique assumenda ipsa quisquam fugit quidem officia eaque molestiae quam earum voluptatibus numquam. Sed assumenda tempore suscipit rem nam quam animi provident non quasi architecto id ab nostrum nesciunt sint, eos recusandae, sequi eum.</p>
+                            <!-- <img
+                              src="https://th.bing.com/th/id/OIP.Zlk227GyTOfRlnASORVXJAHaEK?pid=ImgDet&rs=1"
+                              alt="images of any image"
+                            /> -->
+                            <!-- <iframe src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf" alt=""></iframe> -->
+                            <h2>Hello I am Purna Shrestha.</h2>
                           </div>
                         </div>
                       </div>
                       <div class="content">
-                        <div class="buttons">
-                          <div class="button">
-                            <h6>
-                              <strong>4.</strong> adding very soon....
-                              <strong>[5]</strong>
-                            </h6>
-                          </div>
+                        <div class="button">
+                          <h6>
+                            <strong>4.</strong> adding very soon....
+                            <strong>[5]</strong>
+                          </h6>
                         </div>
                       </div>
                     </div>
@@ -675,13 +602,11 @@
                         </div>
                       </div>
                       <div class="content">
-                        <div class="buttons">
-                          <div class="button">
-                            <h6>
-                              <strong>4.</strong> adding very soon....
-                              <strong>[5]</strong>
-                            </h6>
-                          </div>
+                        <div class="button">
+                          <h6>
+                            <strong>4.</strong> adding very soon....
+                            <strong>[5]</strong>
+                          </h6>
                         </div>
                       </div>
                     </div>
@@ -699,13 +624,11 @@
                         </div>
                       </div>
                       <div class="content">
-                        <div class="buttons">
-                          <div class="button">
-                            <h6>
-                              <strong>4.</strong> adding very soon....
-                              <strong>[5]</strong>
-                            </h6>
-                          </div>
+                        <div class="button">
+                          <h6>
+                            <strong>4.</strong> adding very soon....
+                            <strong>[5]</strong>
+                          </h6>
                         </div>
                       </div>
                     </div>
